@@ -1,0 +1,156 @@
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=U6u2m1kb1CU4qbrHicDVoMuUFMlWPtbkC1Np0cmQbkxzvMgT9oL0Ix46YLkXpjvDPd+o/LzbYgRm4zkviYBGA8lWtqp/4mIwlYH/vtULArMsVIp8aMAZ32ventH3+DeC51SVXubyIQyp8O1F8sFnvBTBSf5ewdcX1I9p0VuuH2CRSf+MlU2bki2TX46Nakv2T8U/lk9l43mMWN4w0d6GSeA8mdj8mu3IXpCoE9QkdZ06u/iStV5gjST0d1aecXM/HlfWmfmgVk/YZKdXQVRXyqgGHM/yylhU3ko7+ymkDVHcH5EY8lJFXFvnXH7WJlsn3+FeFAaOdBrzEUlbTh/e6Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=HKasvyDH0xrjv+yD7y0QydTRTwP5osHQEiMNow7aQLw=;
+ b=FUyyeCHNRbFQJoXf8nsgufXC/YoxD9YjQV4loXMEd0sLTfQxEmP0/5472AehmFG19jRoL/ijbnwVVw0eMZSj7o7wvAJ1E+4L0xNMbAOOQXxv2sPdpmdVYujFUzJie0him4ytHbhibZp9TU9uomIdJlK9zjWd07iXEp++Ohi1PjDGwL6cp0nXe67D8smGBlO45xTI/fEIO2XdgwAb6WIvoc+iIFg2nA9KIgcY/AehS+BUrXXcKA21cxjlQh61vRJsSKMj8k15oFPTwwEB8Lwahku40/WKrNCpVrKnxbNCeiQHrWaMFfd34r00C+FBFZ8v58RjibX+5SGzAf5Egl1zbQ==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=outlook.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=HKasvyDH0xrjv+yD7y0QydTRTwP5osHQEiMNow7aQLw=;
+ b=rmW5sNScR0yu1XP+GoH323Gbmg+Mb10fws4Ql9kocgstfy518qjyAI4YC2ad0gGavIFll3nNSOzATwOqbbanXmOdNtSMmeHkkKH2FDtpnbvhu6uj35pagkp6E6RKqKhLuDi0kSLshIWOXtxtf99N30geIInaYKGcFPGyFxbI11ikmlHymtX5gjma2ExgFK5bW13RTOmEeoTDBKsL2LOXafZk5IDhuUB5wjm+c2mnluATwg93iaBlvLVgZh7nz+m5jHBObyw4oOEmVjeSl1J/sHY4260oQjaJHGEKYlWv7RRaxm0rnhKSB9X3+lamQfr1bAG9R4AVsxEEjEt3iaqG2w==
+Received: from DB7PR02MB4108.eurprd02.prod.outlook.com (2603:10a6:10:4f::33)
+ by DB8PR02MB5961.eurprd02.prod.outlook.com (2603:10a6:10:119::15) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.4628.18; Mon, 25 Oct
+ 2021 04:53:16 +0000
+Received: from DB7PR02MB4108.eurprd02.prod.outlook.com
+ ([fe80::a488:f9f6:a47f:359]) by DB7PR02MB4108.eurprd02.prod.outlook.com
+ ([fe80::a488:f9f6:a47f:359%5]) with mapi id 15.20.4628.020; Mon, 25 Oct 2021
+ 04:53:16 +0000
+From: Razaz Rajkhan <Razaz1992@outlook.com>
+To: "libimobiledevice-devel@libimobiledevice.org"
+	<libimobiledevice-devel@libimobiledevice.org>,
+	"l5y5estu1v8987g7ak-f7gcan-8cpgj0gxj860-jsil7o2yj134fsnw6rndca0v83v7fh-yrdb4kgmu3cdunx6wvfl99cx-8ke05xyx4bu4tevvi-8w9grk7qzs3a-r7qkev-k79tgfdna57t6bq6l1.1597889492396@email.android.com"
+	<l5y5estu1v8987g7ak-f7gcan-8cpgj0gxj860-jsil7o2yj134fsnw6rndca0v83v7fh-yrdb4kgmu3cdunx6wvfl99cx-8ke05xyx4bu4tevvi-8w9grk7qzs3a-r7qkev-k79tgfdna57t6bq6l1.1597889492396@email.android.com>,
+	"libimobiledevice-devel-request@libimobiledevice org"
+	<libimobiledevice-devel-request@libimobiledevice.org>, Razaz Rajkhan
+	<razaz1992@outlook.com>, "data-requests@lifeonair.com"
+	<data-requests@lifeonair.com>,
+	"de.rec.heimwerken+unsubscribe@googlegroups.com"
+	<de.rec.heimwerken+unsubscribe@googlegroups.com>
+Subject: Fwd: Application Call pack URL
+Thread-Topic: Application Call pack URL
+Thread-Index: AQHXyVvgcDmpi7x0+kmoOK0aWmr+zqvjJR46gAAATMU=
+Date: Mon, 25 Oct 2021 04:53:16 +0000
+Message-ID: <DB7PR02MB41086D8013B5614EEF7E37D7AD839@DB7PR02MB4108.eurprd02.prod.outlook.com>
+References: <DB7PR02MB4108A118CF2DAF10BEC18ED5AD839@DB7PR02MB4108.eurprd02.prod.outlook.com>
+ <0fc7a419-868f-465b-868a-ba62dd2a1853@CO1NAM11FT017.eop-nam11.prod.protection.outlook.com>
+In-Reply-To: <0fc7a419-868f-465b-868a-ba62dd2a1853@CO1NAM11FT017.eop-nam11.prod.protection.outlook.com>
+Accept-Language: en-US, ar-SA
+Content-Language: ar-SA
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-ms-exchange-messagesentrepresentingtype: 1
+x-tmn: [d0cSTEVIVMFKE6IpF+txp23C4NtPYOzbvzUl/BnJnAU=]
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 1b93de3b-3aab-40ec-c7c7-08d997735baa
+x-ms-exchange-slblob-mailprops: sq1fF/OcSffSL0M4srcMCUsIg0vbs35Ti3xccvtRZsM5efTcobO6E5pPE1tlziYCkb3B73ZgwA7PuUTenfK4Ha02v3d5RtljQf7bHVOAc5iBif8AovUSxkkuCrJQu/tYAO63tgXpHYzfNB3X/Q3C5kBt83FNJoMeY1NbHS5V+VmoG+YEXr2tmGFuAnI7wkUgv90U2YR0GCieq+wefRzfCqquhnZX719N6wgL1USLZ2iVb0zJfSuEMuFZrK5smQN5P2k/QFgpLmq9howSjt3cpjIiBrxmX949chvOQx20QQvCRLEIpAqkHcK9r8inhvdsMd0OeFT8YXx6Ek0P2qs28azLMaVes2+yL5fWHTdvGdWsNiUbySgmPBx2s3Nck0QFCzTrn6FCIYfjw6N6JFzDwTVPu0FoeSS0kaYJ3PgOHVy4UR3czCW8Z0Ga4XJxDfALpTu+cKriNTvq8/1wOOFNiQTzIX0xqMlbAYNnMAwDQiOt+kD/OFDwri8jynTsgzFK9UXZhAcEScPTBrLB6KkNIih8ywYxFzMKCKFHBOvrB8Lj13i8Bdz1WgIICt+PdeCgGIhONmGvmXQnqDkXmx4kOw==
+x-ms-traffictypediagnostic: DB8PR02MB5961:
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info: s8ee63jwNLEZfJWYXPFT0KpUjWo3Mhg2j1jkx5aYmHeESnVZzdvwMZJXVWyhaXGi0IppWEitjAK/7rjtnGE6s5JGWEEwzk1ikUipfXEGdooR+vL/8JO2RhOzt4RDrrVLmzTKc/QRzAZu4SK2O9qI+kxi6g5ABcsek7mGUbuA6Pz601RZGbK9eEiTNSQUuJhT4PVwsNVYsg9QYJQrJwRqRoycygvFC7s1+7pDifK1Pe/Z/76aziCXxK/Sy8lzjC6DfdaxypXDE6/cVEnACYZ0BGxFT+iHo6MLkGDeXHoTmURwxcmT/s1Afe7S+s5UfJKbG9KsvRy4fsClDK1m9IX456a2ajHh9xuAwP1/Kj3YKPfGDKRTssKP6pXylqjemW+QUuaxtWTjXH7uJ4QCPG2e0LAPzE7BkE4mXlDvgevoYtQhMBPnjpT2PyAwtX2fMijFy3xS9DvyIGHKJtwrK90/raHmihyhLyvOAddOm4TJ+1zjsuJN95nrdBkPdIACnJFU3KFjduP5F4/U79HFUt+ekiulJUzus0+Vm4UGI6I9Hvem52Tua7s+djgErW31tTepgysxwbF0UNBRGxBsnM+8tyoG7uGN/W4sPjSbruEW/c36VcP5YU57HwYB6mzZgQwC
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0: xPovHPg9rhLS59VrFYT2J526KqTXeiOwMqjMRoMEPf0lfRbFYwkrO1IuS1O6xJ1tPhOXJloVE7rvQBwcroWQVPDgKKtB+QCBG5fWc+PB9bohDw9p4XQ9Yem84V8CacCQCrjvxaMlSwNrk3YZIYlGn/1nw6xk4Y/n9P4nm4Pq7VksULqLrbryM8owBK5F5xQay6BwkFckt0JOg3xPxomv3PaTpDFeuy+xR5XWXdTKM9rZgQhlDgy8Q/0ic93UON3M3/4tCrPfx8FfzwMQFHleD+55lJOfJku1Yrp3aK292kSdYezdYjzax34JxafDolePrTGdZq59+Sa7ttFjqhlYbfWJBS1BuyRGXJFHBHeDkGbUBH1NDj8Xq2kSKGpSxeMkwBL0b75XAevi2WZpj2sk4e38Sy5xtBanTqrC+spU/kCtYQ61ymxgu5/VEjOZXy6JeeNnXLOC4nwy7umrIEvXwzwDRNPCPaTmOgFCnIztyEpcsB9FbGmhCDlJ9OyHVtDT87WkYVQ5xnsO7kktaK2DY3vAGMPGjZGWQqf8PQJB2Pn64LLRjNMHEvbXobFjeV3m+rS3XTpvCojakq7CMSxt0tOC+uE00DYEp6vV+by98YuBMLdZ3ANesKouewdITM4gh0VaTOk/j03oLMrgF7hb6LIPgebD2SIrTr9zEgJ6wGHaSJDfq6zjmCOu4vPsmeHn5q22gXw80Tq3tcRwnnq5hQ==
+Content-Type: multipart/alternative;
+	boundary="_000_DB7PR02MB41086D8013B5614EEF7E37D7AD839DB7PR02MB4108eurp_"
+X-OriginatorOrg: outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: DB7PR02MB4108.eurprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-CrossTenant-Network-Message-Id: 1b93de3b-3aab-40ec-c7c7-08d997735baa
+X-MS-Exchange-CrossTenant-originalarrivaltime: 25 Oct 2021 04:53:16.4338
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-rms-persistedconsumerorg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DB8PR02MB5961
+MIME-Version: 1.0
+
+--_000_DB7PR02MB41086D8013B5614EEF7E37D7AD839DB7PR02MB4108eurp_
+Content-Type: text/plain; charset="windows-1256"
+Content-Transfer-Encoding: quoted-printable
+
+
+
+=C7=CD=D5=E1 =DA=E1=EC Outlook =E1=DC iOS<https://aka.ms/o0ukef>
+________________________________
+=E3=E4: The Outlook.com Team <member_services@outlook.com>
+=FE=FE=CA=E3 =C7=E1=C5=D1=D3=C7=E1: Monday, October 25, 2021 7:51:04 AM
+=C5=E1=EC: razaz1992@outlook.com <razaz1992@outlook.com>
+=FE=FE=C7=E1=E3=E6=D6=E6=DA: Application Call pack URL
+
+This email address is not monitored. Please visit the Microsoft Community a=
+t http://answers.microsoft.com/ to learn more about our services, find answ=
+ers to your questions, and share your feedback.
+
+Sincerely,
+
+Outlook.com Team
+Microsoft
+One Microsoft Way. Redmond, WA 98052, USA.
+
+
+
+Microsoft respects your privacy. To learn more, please read our online Priv=
+acy Statement at http://privacy.microsoft.com
+
+--_000_DB7PR02MB41086D8013B5614EEF7E37D7AD839DB7PR02MB4108eurp_
+Content-Type: text/html; charset="windows-1256"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dwindows-1=
+256">
+</head>
+<body>
+<div dir=3D"rtl">
+<div></div>
+<div>
+<div><br>
+</div>
+<div id=3D"ms-outlook-mobile-signature">
+<div><br>
+</div>
+=C7=CD=D5=E1 =DA=E1=EC <a href=3D"https://aka.ms/o0ukef">Outlook =E1=DC iOS=
+</a></div>
+</div>
+</div>
+<hr style=3D"display:inline-block;width:98%" tabindex=3D"-1">
+<div id=3D"divRplyFwdMsg" dir=3D"rtl"><font face=3D"Calibri, sans-serif" st=
+yle=3D"font-size:11pt" color=3D"#000000"><b>=E3=E4:</b> The Outlook.com Tea=
+m &lt;member_services@outlook.com&gt;<br>
+<b>=FE=FE=CA=E3 =C7=E1=C5=D1=D3=C7=E1:</b> Monday, October 25, 2021 7:51:04=
+ AM<br>
+<b>=C5=E1=EC:</b> razaz1992@outlook.com &lt;razaz1992@outlook.com&gt;<br>
+<b>=FE=FE=C7=E1=E3=E6=D6=E6=DA:</b> Application Call pack URL</font>
+<div>&nbsp;</div>
+</div>
+<div class=3D"BodyFragment"><font size=3D"2"><span style=3D"font-size:11pt;=
+">
+<div class=3D"PlainText">This email address is not monitored. Please visit =
+the Microsoft Community at
+<a href=3D"http://answers.microsoft.com/">http://answers.microsoft.com/</a>=
+ to learn more about our services, find answers to your questions, and shar=
+e your feedback.<br>
+<br>
+Sincerely,<br>
+<br>
+Outlook.com Team<br>
+Microsoft<br>
+One Microsoft Way. Redmond, WA 98052, USA.<br>
+<br>
+<br>
+<br>
+Microsoft respects your privacy. To learn more, please read our online Priv=
+acy Statement at
+<a href=3D"http://privacy.microsoft.com">http://privacy.microsoft.com</a><b=
+r>
+</div>
+</span></font></div>
+</body>
+</html>
+
+--_000_DB7PR02MB41086D8013B5614EEF7E37D7AD839DB7PR02MB4108eurp_--
